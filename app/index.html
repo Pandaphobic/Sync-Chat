@@ -8,7 +8,21 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <ul></ul>
+    <style>
+      #messages {
+        height: 250px;
+        width: 229px;
+        overflow: auto;
+        background-color: #dddddd;
+        border-radius: 8px;
+      }
+    </style>
+    <div id="chat">
+      <h3 style="margin-bottom: 0">Chatbox</h3>
+      <div id="messages">
+        <ul></ul>
+      </div>
+    </div>
 
     <input placeholder="message" />
     <button>Send</button>

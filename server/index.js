@@ -9,7 +9,7 @@ io.on("connection", (socket) => {
 
   socket.on("message", (message) => {
     console.log(`${socket.id.substr(0, 4)} said ${message}`);
-    io.emit("message", `${socket.id.substr(0, 4)} said ${message}`);
+    io.emit("message", `${socket.id.substr(0, 4)} says ${message}`);
   });
 
   socket.on("disconnect", () => {
